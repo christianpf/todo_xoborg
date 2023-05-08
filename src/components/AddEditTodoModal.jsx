@@ -10,12 +10,10 @@ const AddEditTodoModal = () => {
 
   const [ newTodo, setNewTodo ] =  useState(todoData);
 
-  console.log(newTodo)
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if(JSON.stringify(todoData) === "{}"){
-      console.log(Math.random().toString() + e.target.title.value)
       addTodo({
         id: Math.random().toString() + e.target.title.value,
         title: e.target.title.value,
@@ -23,7 +21,6 @@ const AddEditTodoModal = () => {
         status: "pending",
       });
     }else {
-      console.log(todoData);
       updateTodo(todoData.id, {
         id: todoData.id,
         title: e.target.title.value,

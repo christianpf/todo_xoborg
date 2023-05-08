@@ -1,5 +1,5 @@
 export const todoInitialState =
-  JSON.parse(window.localStorage.getItem("todos")) || [{id: 1, title: "Hacer Web", description: "USEREDUCfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffER", status: "pending"}, {id: 2, title: "Hacer Web", description: "USEREDUCER", status: "done"},];
+  JSON.parse(window.localStorage.getItem("todos")) || [];
 
 export const TODO_ACTIONS = {
   ADD_TODO: "ADD_TODO",
